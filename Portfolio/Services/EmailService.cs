@@ -21,7 +21,7 @@ namespace Portfolio.Services
 
         public async Task SendMail(EmailViewModel model)
         {
-            MailjetClient client = new MailjetClient(_options.Key, _options.Secret);
+            MailjetClient client = new MailjetClient("9323fc6578a0a23e8b69a2a325e9fa3f", "1f36193c27e08acf276c401ac22431a0");
             MailjetRequest request = new MailjetRequest
             {
                 Resource = SendV31.Resource,
